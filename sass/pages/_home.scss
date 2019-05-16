@@ -1,0 +1,46 @@
+.section-about {
+	padding: 11.7rem;
+
+	&__features {
+		text-align: center;
+		margin-top: 8.6rem;
+	}
+
+	&__lbreak {
+		background-color: $color-grey-light-2;
+	}
+}
+
+.section-founder {
+	position: relative;
+	background-color: $color-grey-light-3;
+
+	&__image {
+		// display: block;
+		width: 60%;
+		height: auto;
+		padding-top: 5rem;
+		text-align: right;
+		float: right;
+	}
+
+	&__content {
+		font-size: 2rem;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__paragraph {
+		margin-bottom: 3.6rem;
+		font-weight: 300;
+		width: 70%;
+	}
+
+	&__name {
+		font-weight: 700;
+	}
+	&__designation {
+		font-size: 2rem;
+	}
+}
