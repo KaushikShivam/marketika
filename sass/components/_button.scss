@@ -6,6 +6,7 @@
 	font-weight: 300;
 	display: inline-block;
 	margin: 2rem;
+	text-transform: capitalize;
 
 	&--color {
 		color: $color-white;
@@ -16,5 +17,10 @@
 		color: $color-grey-dark-1;
 		background: transparent;
 		border: 1px solid $color-grey-dark-2;
+	}
+
+	&--white {
+		color: $color-grey-dark-3;
+		background-color: $color-white;
 	}
 }

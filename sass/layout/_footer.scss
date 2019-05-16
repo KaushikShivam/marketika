@@ -1,0 +1,35 @@
+.footer {
+	padding: 8.6rem;
+	text-align: center;
+
+	&__nav {
+		list-style: none;
+		font-size: 1.4rem;
+		font-weight: 700;
+
+		& li {
+			display: inline-block;
+			margin: 1rem;
+
+			a {
+				text-decoration: none;
+				color: $color-grey-dark-1;
+			}
+		}
+	}
+
+	&__copy {
+		list-style: none;
+		font-size: 1.4rem;
+		font-weight: 700;
+
+		& li {
+			display: inline-block;
+			margin: 1rem;
+			a {
+				text-decoration: none;
+				color: $color-grey-dark-1;
+			}
+		}
+	}
+}
