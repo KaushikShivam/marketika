@@ -44,3 +44,17 @@
 		font-size: 2rem;
 	}
 }
+
+.section-plans {
+	padding: 11.7rem;
+	text-align: center;
+
+	&--description {
+		display: inline-block;
+		width: 60%;
+	}
+
+	&--heading {
+		margin-bottom: 1.7rem;
+	}
+}
