@@ -19,7 +19,13 @@
 	}
 
 	&__content {
+		width: 90%;
 		@include absCenter;
+
+		@include respond(phone) {
+			width: 80%;
+			line-height: 1;
+		}
 	}
 
 	&__description {

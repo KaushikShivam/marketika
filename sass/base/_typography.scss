@@ -10,19 +10,38 @@ body {
 	font-weight: 700;
 	color: $color-white;
 	margin-bottom: 1.5rem;
-	// line-height: 1;
+	line-height: 1.5;
+
+	@include respond(phone) {
+		line-height: 1;
+		// font-size: 2.9rem;
+		margin-bottom: 2.5rem;
+	}
 }
 
 .heading-secondary {
 	font-size: $heading-secondary;
 	font-weight: 700;
 	margin-bottom: 5.7rem;
+	@include respond(tab-land) {
+		font-size: 3.4rem;
+		margin-bottom: 3rem;
+	}
+
+	@include respond(tab-port) {
+		font-size: 4rem;
+		margin-bottom: 2.5rem;
+	}
 }
 
 .heading-tertiary {
 	font-size: $heading-tertiary;
 	font-weight: 700;
 	margin-bottom: 1.4rem;
+	@include respond(tab-port) {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
 }
 
 .paragraph {

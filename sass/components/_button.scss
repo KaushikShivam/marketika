@@ -7,6 +7,12 @@
 	display: inline-block;
 	margin: 2rem;
 	text-transform: capitalize;
+	border: none;
+	cursor: pointer;
+
+	:focus {
+		outline: none;
+	}
 
 	&--color {
 		color: $color-white;

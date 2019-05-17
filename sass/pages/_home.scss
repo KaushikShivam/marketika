@@ -7,7 +7,29 @@
 	}
 
 	&__lbreak {
+		border: none;
+		height: 0.5px;
 		background-color: $color-grey-light-2;
+
+		@include respond(tab-land) {
+			height: 1px;
+		}
+	}
+
+	@include respond(tab-port) {
+		.about-box {
+			float: none;
+			width: 100%;
+		}
+
+		.video-box {
+			float: none;
+			width: 100%;
+		}
+
+		&__heading {
+			width: 100%;
+		}
 	}
 }
 
@@ -16,12 +38,14 @@
 	background-color: $color-grey-light-3;
 
 	&__image {
-		// display: block;
 		width: 60%;
 		height: auto;
 		padding-top: 5rem;
 		text-align: right;
 		float: right;
+		@include respond(phone) {
+			float: none;
+		}
 	}
 
 	&__content {
@@ -29,12 +53,29 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+
+		@include respond(phone) {
+			position: relative;
+			top: 0;
+			transform: translateY(0);
+			margin: 3.5rem;
+		}
 	}
 
 	&__paragraph {
 		margin-bottom: 3.6rem;
 		font-weight: 300;
 		width: 70%;
+
+		@include respond(tab-port) {
+			font-size: 2rem;
+			margin-bottom: 2.5rem;
+			width: 90%;
+		}
+
+		// @include respond(phone) {
+		// 	padding: 2rem;
+		// }
 	}
 
 	&__name {
@@ -56,5 +97,11 @@
 
 	&--heading {
 		margin-bottom: 1.7rem;
+	}
+
+	@media screen and (max-width: 49em) {
+		&__box {
+			width: 100% !important;
+		}
 	}
 }
