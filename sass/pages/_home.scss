@@ -31,6 +31,9 @@
 			width: 100%;
 		}
 	}
+	@include respond(phone) {
+		padding: 5rem;
+	}
 }
 
 .section-founder {
@@ -72,10 +75,6 @@
 			margin-bottom: 2.5rem;
 			width: 90%;
 		}
-
-		// @include respond(phone) {
-		// 	padding: 2rem;
-		// }
 	}
 
 	&__name {
@@ -93,6 +92,10 @@
 	&--description {
 		display: inline-block;
 		width: 60%;
+
+		@include respond(phone) {
+			width: 90%;
+		}
 	}
 
 	&--heading {
@@ -103,5 +106,9 @@
 		&__box {
 			width: 100% !important;
 		}
+	}
+
+	@include respond(phone) {
+		padding: 5rem;
 	}
 }

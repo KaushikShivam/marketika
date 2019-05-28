@@ -31,5 +31,9 @@
 	&__description {
 		font-size: $heading-description;
 		color: $color-white;
+
+		@include respond(phone) {
+			font-size: 2rem;
+		}
 	}
 }
