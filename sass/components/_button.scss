@@ -14,19 +14,59 @@
 		outline: none;
 	}
 
-	&--color {
+	&--color,
+	&--color:link,
+	&--color:visited {
 		color: $color-white;
 		background: linear-gradient(to right, $color-primary, $color-secondary);
+		transition: all 0.2s;
 	}
 
-	&--blank {
+	&--color:hover {
+		transform: scale(1.05);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+	}
+
+	&--color:active {
+		transform: scale(1);
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	}
+
+	&--blank:link,
+	&--blank:visited {
 		color: $color-grey-dark-1;
 		background: transparent;
 		border: 1px solid $color-grey-dark-2;
+		transition: all 0.2s;
 	}
 
-	&--white {
+	&--blank:hover {
+		color: $color-white;
+		background: linear-gradient(to right, $color-primary, $color-secondary);
+		border: 1px solid transparent;
+		transform: scale(1.05);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+	}
+
+	&--blank:active {
+		transform: scale(1);
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	}
+
+	&--white:link,
+	&--white:visited {
 		color: $color-grey-dark-3;
 		background-color: $color-white;
+		transition: all 0.2s;
+	}
+
+	&--white:hover {
+		transform: scale(1.05);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+	}
+
+	&--white:active {
+		transform: scale(1);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 	}
 }

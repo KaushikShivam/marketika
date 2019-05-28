@@ -11,9 +11,19 @@
 			display: inline-block;
 			margin: 1rem;
 
-			a {
+			a:link,
+			a:visited {
+				padding: 5px;
 				text-decoration: none;
 				color: $color-grey-dark-1;
+				transition: all 0.2s;
+			}
+
+			a:hover,
+			a:active {
+				transform: scale(1.05);
+				background: linear-gradient(to right, $color-primary, $color-secondary);
+				color: $color-white;
 			}
 		}
 	}
@@ -26,9 +36,19 @@
 		& li {
 			display: inline-block;
 			margin: 1rem;
-			a {
+			a:link,
+			a:visited {
+				padding: 5px;
 				text-decoration: none;
 				color: $color-grey-dark-1;
+				transition: all 0.2s;
+			}
+
+			a:hover,
+			a:active {
+				transform: scale(1.05);
+				background: linear-gradient(to right, $color-primary, $color-secondary);
+				color: $color-white;
 			}
 		}
 	}
